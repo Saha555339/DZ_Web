@@ -45,54 +45,22 @@
             <div class="col-3 fixed-class">
                 <h2 class="mt-5 all-header"><u>Popular Tags</u></h2>
 
-                <div class="tag">
-                    <a class="nav-link active" href="">
-                        <h4>Python</h4>
-                    </a>
-                </div>
-
-                <div class="tag">
-                    <a class="nav-link active" href="">
-                        <h4>SQL</h4>
-                    </a>
-                </div>
-
-                <div class="tag">
-                    <a class="nav-link active" href="">
-                        <h4>C#</h4>
-                    </a>
-                </div>
-
-                <div class="tag">
-                    <a class="nav-link active" href="">
-                        <h4>C++</h4>
-                    </a>
-                </div>
-
-                <div class="tag">
-                    <a class="nav-link active" href="">
-                        <h4>Django</h4>
-                    </a>
-                </div>
+                {% for tag in tags %}
+                    {% include "inc/tag.html" %}
+                {% endfor %}
 
                 <h2 class="mt-5 all-header"><u>Best Members</u></h2>
 
-                <div class="member">
-                    <a class="nav-link active" href="">
-                        <h4>HANAY</h4>
-                    </a>
-                </div>
-
-                <div class="member">
-                    <a class="nav-link active" href="">
-                        <h4>BABOS</h4>
-                    </a>
-                </div>
+                {% for member in top_members %}
+                    {% include "inc/member.html" %}
+                {% endfor %}
 
             </div>
         </div>
+        <footer class="footer">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </footer>
     </div>
-
 </main>
 </body>
 </html>
