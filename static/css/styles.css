@@ -1,0 +1,181 @@
+/*ALL*/
+main > .container {
+    padding: 60px 15px 0;
+}
+
+.fixed-class {
+    right: 0;
+    position: fixed;
+}
+
+.tag {
+    font-style: italic;
+}
+
+.member {
+    font-style: italic;
+}
+
+.all-header {
+    color: #ffb655;
+}
+
+/*Home*/
+.question {
+    border: 3px solid black;
+    border-radius: 22px;
+    margin: 17px;
+    padding: 12px;
+}
+
+.avatar-question {
+    width: 120px;
+    height: 100px;
+}
+
+.sign-in {
+    width: 650px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#search-input {
+    width: 800px;
+}
+
+.search {
+    border-radius: 40px;
+    font-size: 15px;
+}
+
+.header-text {
+    font-size: 20px;
+}
+
+
+.header-top {
+    font-style: oblique;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.header-new-questions {
+    font-size: 40px;
+    color: #ffb655;
+    mix-blend-mode: multiply;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.15deg);
+    padding-top: 50px;
+}
+
+.header-hot-questions {
+    font-size: 25px;
+}
+
+#btn-ask {
+    width: 90px;
+}
+
+/*Ask*/
+.input-question {
+    width: 500px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+#inputText {
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.label-ask-question {
+    font-size: 20px;
+    color: blueviolet;
+    mix-blend-mode: multiply;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.15deg);
+}
+
+.like {
+    left: 0;
+    height: 37px;
+}
+
+/*registration*/
+
+#regHead {
+    font-size: 40px;
+    color: #ffb655;
+    mix-blend-mode: multiply;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.15deg);
+    padding-top: 50px;
+}
+
+.head-registration {
+    padding-top: 20px;
+}
+
+#reg-error {
+    color: red;
+    font-size: 20px;
+}
+
+.input {
+    border-radius: 10px;
+    width: 430px;
+    padding-bottom: 7px;
+}
+
+.body-registration {
+    padding-top: 20px;
+}
+
+.label-registration {
+    font-size: 20px;
+    color: blueviolet;
+    mix-blend-mode: multiply;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.15deg);
+}
+
+.error {
+    color: red;
+}
+
+
+/*Log in*/
+#logHeader {
+    width: 204px;
+    height: 49px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+
+    color: #ffb655;
+
+    mix-blend-mode: multiply;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-0.15deg);
+    padding-top: 30px;
+}
+
+.new-account {
+    font-size: 20px;
+    padding-left: 17px;
+    font-style: italic;
+}
+
+.log-in {
+    width: 221px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+/*Settings*/

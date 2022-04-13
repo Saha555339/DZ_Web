@@ -1,0 +1,98 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Asks</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="tabs">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active header-text" href="{% url "home" %}">Home</a>
+                    </li>
+                    <form class="d-flex">
+                        <input class="form-control me-2 search" id="search-input" type="search" placeholder="Search"
+                               aria-label="Search">
+                        <button class="btn bt-lg btn-primary search" type="submit">Search</button>
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link active header-text" href="{% url "log-in" %}">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active header-text" href="{% url "registration" %}">Sign in</a>
+                    </li>
+                    <form class="d-flex" action="{% url "ask" %}" target="_blank">
+                        <button class="btn bt-lg btn-primary" id="btn-ask">ASK!</button>
+                    </form>
+                    <a class="nav-link active header-text" href="{% url "settings" %}">Settings</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            {% block content %}
+            {% endblock content %}
+            <div class="col-3 fixed-class">
+                <h2 class="mt-5 all-header"><u>Popular Tags</u></h2>
+
+                <div class="tag">
+                    <a class="nav-link active" href="">
+                        <h4>Python</h4>
+                    </a>
+                </div>
+
+                <div class="tag">
+                    <a class="nav-link active" href="">
+                        <h4>SQL</h4>
+                    </a>
+                </div>
+
+                <div class="tag">
+                    <a class="nav-link active" href="">
+                        <h4>C#</h4>
+                    </a>
+                </div>
+
+                <div class="tag">
+                    <a class="nav-link active" href="">
+                        <h4>C++</h4>
+                    </a>
+                </div>
+
+                <div class="tag">
+                    <a class="nav-link active" href="">
+                        <h4>Django</h4>
+                    </a>
+                </div>
+
+                <h2 class="mt-5 all-header"><u>Best Members</u></h2>
+
+                <div class="member">
+                    <a class="nav-link active" href="">
+                        <h4>HANAY</h4>
+                    </a>
+                </div>
+
+                <div class="member">
+                    <a class="nav-link active" href="">
+                        <h4>BABOS</h4>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>

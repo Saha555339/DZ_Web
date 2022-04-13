@@ -1,0 +1,32 @@
+{% extends "inc/base.html" %}
+{% load static %}
+{% block content %}
+<div class="col-3" id="logHeader"><u>Log in</u></div>
+        <div class="row head-registration">
+            <div class="col-10">
+                <label class="col-sm-2 col-form-label" id="reg-error">Error!!!</label>
+                <div class="row body-registration">
+                    <label for="inputLogin" class="col-sm-3 col-form-label label-registration">Login</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-floating input" id="inputLogin" placeholder="Login">
+                    </div>
+                </div>
+
+                <div class="row body-registration">
+                    <label for="inputPassword" class="col-sm-3 col-form-label label-registration">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-check-inline input" id="inputPassword"
+                               placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="row body-registration">
+                    <button class="btn-primary log-in" type="submit" id="btn-sign-in">Log in</button>
+                </div>
+
+                <div class="row body-registration">
+                    <a class="nav-link activate new-account" href="registration.html"><u>create new account</u></a>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

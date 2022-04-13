@@ -1,0 +1,30 @@
+{% extends "inc/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="col-8">
+        <div class="row header-new-questions">
+            <h1>New Question</h1>
+        </div>
+        <div class="row body-registration">
+            <label for="inputTitle" class="col-sm-2 col-form-label label-ask-question">Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-floating input-question" id="inputTitle">
+            </div>
+        </div>
+        <div class="row body-registration">
+            <label for="inputText" class="col-sm-2 col-form-label label-ask-question">Text</label>
+            <div class="col-sm-10">
+                <textarea class="form-floating" id="inputText"></textarea>
+            </div>
+        </div>
+        <div class="row body-registration">
+            <label for="inputTags" class="col-sm-2 col-form-label label-ask-question">Tags</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-floating input-question" id="inputTags">
+            </div>
+        </div>
+        <div class="row body-registration">
+            <button class="btn-primary sign-in" type="submit" id="btn-sign-in">ASK!</button>
+        </div>
+    </div>
+{% endblock %}

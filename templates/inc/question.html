@@ -1,0 +1,16 @@
+{% load static %}
+<div class="row question">
+    <div class="col-2">
+        <img class="avatar-question" src="{% static "img/Crazy_Frog.jpg" %}">
+    </div>
+    <div class="col-10">
+        <a class="nav-link active header-text" href="{% url "question" question.number %}">
+            <h3>{{ question.title }}</h3>
+        </a>
+        <p>{{ question.text }}</p>
+        <button class="like d-inline btn bt-lg btn-primary">Like</button>
+        <a class="d-inline nav-link active" href=""><u>answers (6)</u></a>
+        <label class="d-inline">Tags:</label>
+        <a class="d-inline nav-link active" href="">Python</a>
+    </div>
+</div>
