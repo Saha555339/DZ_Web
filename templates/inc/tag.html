@@ -1,6 +1,6 @@
 {% load static %}
 <div class="tag">
-    <a class="nav-link active" href="">
+    <a class="nav-link active" href="{% url "tag" tag.number %}">
         <h4>{{ tag.name }}</h4>
     </a>
 </div>

@@ -4,4 +4,10 @@
     <div class="col-9">
         {% include "inc/question.html" %}
     </div>
+    <h1 class="answers all-header">Answers:</h1>
+    <div class="col-9">
+    {% for answer in answers %}
+        {% include "inc/answer.html" %}
+    {% endfor %}
+    </div>
 {% endblock %}

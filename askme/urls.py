@@ -6,5 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="home"),
     path('', include("app.urls")),
-    path('questions/', include("app.urls")),
+    path('tag/<int:number>', views.tags_question, name="tag")
 ]

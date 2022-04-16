@@ -9,8 +9,10 @@
         </a>
         <p>{{ question.text }}</p>
         <button class="like d-inline btn bt-lg btn-primary">Like</button>
-        <a class="d-inline nav-link active" href=""><u>answers (6)</u></a>
+        <a class="d-inline nav-link active" href="{% url "question" question.number %}"><u>answers</u></a>
         <label class="d-inline">Tags:</label>
-        <a class="d-inline nav-link active" href="">Python</a>
+        {% for tag in tags %}
+            <a class="d-inline nav-link active" href="{% url "tag" tag.number %}">{{ tag.name }}</a>
+        {% endfor %}
     </div>
 </div>

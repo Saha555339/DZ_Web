@@ -1,9 +1,8 @@
 {% extends "inc/base.html" %}
 {% load static %}
 {% block content %}
-    <div class="col-3 header-top header-new-questions">New Questions</div>
-    <div class="col-2 header-top header-new-questions">
-        <a class="active header-hot-questions" href="{% url "hot_questions" %}">Hot Questions</a>
+    <div class="row">
+        <div class="col-3 header-top header-new-questions">Hot Questions</div>
     </div>
     <div class="col-9">
         {% for question in questions %}
